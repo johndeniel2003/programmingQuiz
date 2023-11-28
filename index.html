@@ -1,25 +1,48 @@
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <h1>Guess the hidden word</h1>
-      <div class="content">
-        <input type="text" class="typing-input" maxlength="1">
-        <div class="inputs"></div>
-        <div class="details">
-          <p class="hint">Hint: <span></span></p>
-          <p class="guess-left">Remaining guesses: <span></span></p>
-          <p class="wrong-letter">Wrong letters: <span></span></p>
+    <script src="https://kit.fontawesome.com/f59b89817d.js" crossorigin="anonymous"></script>
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="quiz-app">
+        <div class="quiz-area">
+            <div class="start-upBtn">
+                <button id="start">Start</button>
+            </div>
+            <div class="header">
+                <div class="title">
+                    <h3>Programming <span>Quiz</span></h3>
+                </div>
+                <div class="time">
+                    <p >Time Left: <span id="time">00</span></p>
+                    <br>
+                    <p >Player Score: <span id="score">0</span></p>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="quiz">
+                <div class="quiz-question">
+                </div>
+                <div class="quiz-choices">
+                </div>
+                <div class="quiz-footer">
+                    <p class="quizCount"></p>
+                    <button class="next" id="next">Next</button>
+                </div>
+            </div>
+            <div class="score-board">
+            </div>
+            <div class="play-again"><button id="again">Play Again</button></div>
         </div>
-        <button class="reset-btn">Reset Game</button>
-      </div>
     </div>
+
+    <script type="module" src="app.js"></script>
     <script src="data.js"></script>
-    <script src="app.js"></script>
-  </body>
+</body>
 </html>
